@@ -26,7 +26,7 @@ pipeline{
           sh  "  cp -f target/myweb.war /opt/apache-tomcat-9.0.55/webapps/"
                    
                     
-                    sh "cd /home/ec2-user/apache-tomcat-9.0.55/bin"
+                    sh "cd /opt/apache-tomcat-9.0.55/bin"
                     
                   sh "  ./shutdown.sh"
                     
