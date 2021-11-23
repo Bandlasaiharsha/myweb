@@ -22,9 +22,8 @@ pipeline{
                 sh """
                     whoami
                     pwd
-                    cd /home/ec2-user/apache-tomcat-9.0.55/webapps/
-                    
-               cp /var/lib/jenkins/workspace/"Sai harsha"/target/myweb.war .
+                   
+               cp -r target/myweb.war /home/ec2-user/apache-tomcat-9.0.55/webapps/
                    
                     
                     cd /home/ec2-user/apache-tomcat-9.0.55/bin
