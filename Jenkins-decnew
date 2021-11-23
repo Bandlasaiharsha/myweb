@@ -18,7 +18,7 @@ pipeline{
         }
         stage("deploy-dev"){
             steps{
-                sshagent(['tomcat-new']) {
+              
                 sh """
                     whoami
                     pwd
@@ -34,7 +34,7 @@ pipeline{
                     ./startup.sh
                 
                 """
-            }
+            
             
             }
         }
