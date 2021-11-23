@@ -19,20 +19,19 @@ pipeline{
         stage('Deploy to Tomcat'){
             steps{
               
-                sh """
-                    whoami
-                    pwd
-                   
-               cp -r target/myweb.war /home/ec2-user/apache-tomcat-9.0.55/webapps/
-                   
-                    
-                    cd /home/ec2-user/apache-tomcat-9.0.55/bin
-                    
-                    ./shutdown.sh
-                    
-                    ./startup.sh
                 
-                """
+                    sh "whoami"
+                    sh "pwd"
+                   
+           sh  "  cp -r target/myweb.war /home/ec2-user/apache-tomcat-9.0.55/webapps/"
+                   
+                    
+                    sh "cd /home/ec2-user/apache-tomcat-9.0.55/bin"
+                    
+                  sh "  ./shutdown.sh"
+                    
+                    sh "./startup.sh"
+              
             
             
             }
