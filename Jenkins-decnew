@@ -22,9 +22,7 @@ pipeline{
                 sh """
                     whoami
                     pwd
-            
-                    ls
-                cp target/myweb.war /home/ec2-user/apache-tomcat-9.0.55/webapps/maven.war
+               cp -f target/myweb.war /home/ec2-user/apache-tomcat-9.0.55/webapps/maven.war
                    
                     
                     cd /home/ec2-user/apache-tomcat-9.0.55/bin
