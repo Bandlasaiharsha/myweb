@@ -28,7 +28,7 @@ pipeline{
                     
                     sh "cd /opt/apache-tomcat-9.0.55/bin"
                     
-                  sh "  ./shutdown.sh"
+                  echo" ./shutdown.sh"
                     
                     sh "./startup.sh"
               
