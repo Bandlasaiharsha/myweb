@@ -21,7 +21,7 @@ pipeline{
                 sshagent(['tomcat-new']) {
                 sh """
                     whoami
-                    cp -u root target/myweb.war /home/ec2-user/apache-tomcat-9.0.55/webapps
+                    cp target/myweb.war /home/ec2-user/apache-tomcat-9.0.55/webapps
                    
                     
                     cd /home/ec2-user/apache-tomcat-9.0.55/bin
