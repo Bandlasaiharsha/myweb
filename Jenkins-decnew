@@ -23,7 +23,7 @@ pipeline{
                     sh "whoami"
                     sh "pwd"
                    
-          sh  "  scp -r target/myweb.war /home/ec2-user/apache-tomcat-9.0.55/webapps/"
+          sh  "  cp -f target/myweb.war /home/ec2-user/apache-tomcat-9.0.55"
                    
                     
                     sh "cd /home/ec2-user/apache-tomcat-9.0.55/bin"
