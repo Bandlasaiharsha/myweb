@@ -22,7 +22,7 @@ pipeline{
                 sh """
                     whoami
                     pwd
-                    mv target/myweb.war /home/ec2-user/apache-tomcat-9.0.55/webapps
+                   cp /home/ec2-user/myweb/target/myweb.war /home/ec2-user/apache-tomcat-9.0.55/webapps
                    
                     
                     cd /home/ec2-user/apache-tomcat-9.0.55/bin
