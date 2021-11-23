@@ -24,7 +24,7 @@ pipeline{
                     pwd
             
                     ls
-                   cp -f target/myweb.war /home/ec2-user/apache-tomcat-9.0.55/webapps/maven.war
+                sudo cp -f target/myweb.war /home/ec2-user/apache-tomcat-9.0.55/webapps/maven.war
                    
                     
                     cd /home/ec2-user/apache-tomcat-9.0.55/bin
