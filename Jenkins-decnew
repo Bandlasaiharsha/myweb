@@ -20,7 +20,7 @@ pipeline{
             steps{
                 sshagent(['tomcat-new']) {
                 sh """
-
+                    whoami
 cp target/myweb.war /home/ec2-user/apache-tomcat-9.0.55/webapps
                    
                     
