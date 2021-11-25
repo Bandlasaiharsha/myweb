@@ -19,6 +19,7 @@ pipeline{
         stage("deploy-dev"){
             steps{
                 sh "mv target/*.war /home/ec2-user/apache-tomcat-9.0.55/webapps"
-        }
+                 }
+         }
     }
 }
