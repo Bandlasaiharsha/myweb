@@ -5,6 +5,13 @@ import junit.framework.TestCase;
 
 public class CalculatorTest extends TestCase {
 	Calculator cal = new Calculator();
-	public void testAdd(){
+	int minval(int *A, int n) {
+  int currmin;
+
+  for (int i=0; i<n; i++)
+    if (A[i] < currmin)
+      currmin = A[i];
+  return currmin;
+}
 	
 }
