@@ -5,13 +5,8 @@ import junit.framework.TestCase;
 
 public class CalculatorTest extends TestCase {
 	Calculator cal = new Calculator();
-	int minval(int *A, int n) {
-  int currmin;
-
-  for (int i=0; i<n; i++)
-    if (A[i] < currmin)
-      currmin = A[i];
-  return currmin;
-}
+for (i=0; i<numrows; i++)
+  for (j=0; j<numcols; j++);
+    pixels++;
 	
 }
